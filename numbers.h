@@ -1,15 +1,29 @@
 #ifndef __NUMBERS_H__
 #define __NUMBERS_H__
 
-int q1_armstrong(int n);
-int q2_brackets(const char *e);
-int q3_perfect(int x);
-int q4_rotate(int n, int r);
-int q5_str_search(const char *pattern, const char *text);
-int q6_collatz_count(int n);
-double q7_array(int n, const int *A);
-void q8_strings(const char *s1, const char *s2, char *s3);
-void q9_sort(int x, int y, int z, int *list);
-void q10_max_sub_sum(const int *list, int n, int *p, int *q);
+#include "numbers.h"
+#include <string>
+#include <cstring>
+#include <cmath>
+#include <cstring>
+#include <cmath>
+#include <vector>
+#include <iostream>
+#include <string.h>
+#include <stdio.h>
+typedef unsigned long int ul_int;
+using namespace std;
+
+int armstrong(int n);
+int brackets(const char *e);
+int perfect(int x)
+int collatz_count(int n);
+void sort(int x, int y, int z, int *list);
+void reverse(char *str, int n);
+int palindrome(const char *str, int n);
+int sorted(const int *array, int n);
+unsigned long int hex2dec(const char *hex);
+void dec2hex(unsigned int d, char *hex);
+
 
 #endif
