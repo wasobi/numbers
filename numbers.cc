@@ -12,7 +12,7 @@ typedef unsigned long int ul_int;
 using namespace std;
 
 
-int q1_armstrong(int n){
+int armstrong(int n){
     int sum = 0;
     int digit = 0;
     int power = 0;
@@ -54,7 +54,7 @@ int q1_armstrong(int n){
  non-zero number, then we can say that the number
  of brackets is not balanced.
  * * * * * * * * * * * * * * * * * * * * * * * * * */
-int q2_brackets(const char *e){
+int brackets(const char *e){
     
     int sum = 0;
     // by default we are assuming that the number of brackets is balanced
@@ -84,7 +84,7 @@ int q2_brackets(const char *e){
 /* * * * * * * * * * * * * * * * * * * * * * * * * *
  Q03:
  * * * * * * * * * * * * * * * * * * * * * * * * * */
-int q3_perfect(int x){
+int perfect(int x){
     
     // By default we are going to assume that perfect is false
     int sum = 0;
@@ -112,7 +112,7 @@ int q3_perfect(int x){
 /* * * * * * * * * * * * * * * * * * * * * * * * * *
  Q06: CORRECT
  * * * * * * * * * * * * * * * * * * * * * * * * * */
-int q6_collatz_count(int n){
+int collatz_count(int n){
     
     int count = 0;
     
@@ -140,7 +140,7 @@ int q6_collatz_count(int n){
  Q09: Simple sorting algorithm that takes sorts three
  numbers from least to greatest.
  * * * * * * * * * * * * * * * * * * * * * * * * * */
-void q9_sort(int x, int y, int z, int *list){
+void sort(int x, int y, int z, int *list){
     
     // makes the first comparison between the first two numbers
     if (x < y) {
@@ -187,7 +187,7 @@ void q9_sort(int x, int y, int z, int *list){
 
 
 
-void q1_reverse(char *str, int n){
+void reverse(char *str, int n){
   // temporary var to hold a character
   char temp;
   // when n is less than or equal to 1 you are at the middle of the string
@@ -204,7 +204,7 @@ void q1_reverse(char *str, int n){
   }
 }
 
-int q2_palindrome(const char *str, int n){
+int palindrome(const char *str, int n){
   // if the string has only one letter then it is a palindrome
   if (strlen(str) == 1) return 1;
   // if the current element is not equal to the last element , then it is not a palindrome
@@ -215,7 +215,7 @@ int q2_palindrome(const char *str, int n){
   return q2_palindrome(str+1,n);
 }
 
-int q3_sorted(const int *array, int n){
+int sorted(const int *array, int n){
   // when the the array pointer points to the last index, we can say that the array is sorted
   if (array == array+n-1) return 1;
   // when the current element is greater than the subsequent element , the array is not sorted
@@ -223,13 +223,7 @@ int q3_sorted(const int *array, int n){
   return q3_sorted(array+1,n-1);
 }
 
-long int q4_unique(const int *A, int n, int k){
-  return 1;
-}
-
-
-
-unsigned long int q6_hex2dec(const char *hex){
+unsigned long int hex2dec(const char *hex){
   ul_int hex_num;
   ul_int sum = 0;
   int len = strlen(hex);
@@ -281,7 +275,7 @@ unsigned long int q6_hex2dec(const char *hex){
 }
 
 
-void q7_dec2hex(unsigned int d, char *hex){
+void dec2hex(unsigned int d, char *hex){
   // add the 0 and x character to the string
   *(hex) = '0';
   *(hex+1) = 'x';
