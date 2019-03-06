@@ -3,7 +3,7 @@
 
 int armstrong(int n);
 int brackets(const char *e);
-int perfect(int x)
+int perfect(int x);
 int collatz_count(int n);
 void sort(int x, int y, int z, int *list);
 void reverse(char *str, int n);
